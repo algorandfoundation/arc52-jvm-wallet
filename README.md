@@ -13,5 +13,5 @@ cd bip32-ed25519-kotlin
 ./initialize.sh
 cd ..
 cp bip32-ed25519-kotlin/build/*.jar arc52-jvm-wallet/src/libs/
-cp bip32-ed25519-kotlin/jvmModule/libs/*.jar arc52-jvm-wallet/src/libs/
+cp bip32-ed25519-kotlin/sharedModule/libs/*.jar arc52-jvm-wallet/src/libs/
 ```
