@@ -8,10 +8,10 @@ From the terminal run the following:
 
 ```bash
 git clone git@github.com:algorandfoundation/arc52-jvm-wallet.git
-git clone git@github.com:algorandfoundation/bip32-ed25519-kotlin.git
-cd bip32-ed25519-kotlin
+git clone git@github.com:algorandfoundation/xHD-wallet-api-kt.git
+cd xHD-wallet-api-kt
 ./initialize.sh
 cd ..
-cp bip32-ed25519-kotlin/build/*.jar arc52-jvm-wallet/src/libs/
-cp bip32-ed25519-kotlin/sharedModule/libs/*.jar arc52-jvm-wallet/src/libs/
+cp xHD-wallet-api-kt/build/*.jar arc52-jvm-wallet/src/libs/
+cp xHD-wallet-api-kt/sharedModule/libs/*.jar arc52-jvm-wallet/src/libs/
 ```
