@@ -1,4 +1,4 @@
-# arc52-jvm-wallet
+# ARC-0052 JVM Wallet Reference Implementation
 
 Example showcasing how to use the xHD-Wallet-API Kotlin library in JVM, as opposed to in Android.
 
