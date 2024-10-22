@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.22"
+    application
 }
 
 group = "org.example"
@@ -10,9 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "src/libs", "include" to listOf("*.jar"))))
-    implementation("net.java.dev.jna:jna:5.12.1")
-    implementation("com.goterl:resource-loader:2.0.2")
+    implementation("foundation.algorand.xhdwalletapi:xhdwalletapi:1.1.0")
     implementation("cash.z.ecc.android:kotlin-bip39:1.0.7")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
@@ -20,6 +19,11 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(21)
+}
+
+application {
+    mainClass.set("org.example.MainKt")
 }
